@@ -7,6 +7,7 @@
     color: #707070;
     font-weight: 500;
     font-size: 30px;
+    margin: 0.67em 0;
   }
 
   .search-actions {
@@ -78,6 +79,7 @@
   height: 883px;
   background-color: #F4F5F7;
   overflow-y: auto;
+  position: relative;
 
   .header {
     background-color: #E4E6EB;
@@ -180,5 +182,30 @@
         height: auto;
       }
     }
+  }
+}
+
+.options-column{
+  position: absolute;
+  right: 15px;
+  top: 55px;
+  background-color: white;
+  width: 132px;
+  height: 71px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #545454;
+  z-index: 2;
+
+  .edit-column, .del-column{
+    padding: 7px 10px;
+  }
+  hr{
+    width: 85%;
+    margin: 0 auto;
+    border: 0.5px solid rgb(234, 238, 241) ;
   }
 }

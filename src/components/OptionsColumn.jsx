@@ -1,10 +1,11 @@
 import React from "react";
 
-const Options = ({ ref }) => {
+const Options = ({ hidden }) => {
   return (
-    <div>
-      <div onClick={() => {console.log(ref)}}>Editar</div>
-      <div>Excluir</div>
+    <div className="options-column" >
+      <div className="edit-column" onClick={() => {console.log(hidden)}}>Renomear</div>
+      <hr/>
+      <div className="del-column" >Excluir</div>
     </div>
   );
 };

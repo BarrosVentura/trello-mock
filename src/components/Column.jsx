@@ -1,19 +1,23 @@
-import React, { useRef } from "react";
-// import OptionsColumn from "./OptionsColumn";
+import React, { useRef, useState } from "react";
+import OptionsColumn from "./OptionsColumn";
 
 const Column = ({ title, children }) => {
   const titleRef = useRef();
+  const [options, setOptions] = useState(false);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    setOptions((!options));
+  };
 
   return (
     <div className="column">
+      {options ? <OptionsColumn /> : ""}
       <div className="header">
         <h2 className="title" ref={titleRef}>
           {title}
         </h2>
-        <div className="menu">
-          <div className="hamburguer" onClick={handleClick}></div>
+        <div className="menu"  onClick={handleClick}>
+          <div className="hamburguer"></div>
         </div>
       </div>
       <div className="content">{children}</div>
