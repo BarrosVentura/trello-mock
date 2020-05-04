@@ -10,7 +10,6 @@ const CreateColumn = () => {
     setColumns([...columns, { value: newCol.current.value }]);
     e.target.value = "";
   };
-
   return (
     <div className="container" >
       {columns.map(e => (

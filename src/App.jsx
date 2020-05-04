@@ -6,7 +6,7 @@ import "./App.scss";
 function App() {
   return (
     <Layout title="Título do Quadro">
-      <CreateColumn title="Opa"/>
+      <CreateColumn />
     </Layout>
   );
 }

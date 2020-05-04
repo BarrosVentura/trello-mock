@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import Dropdown from "../svg/Dropdown";
+import List from "./List";
 
 const Layout = ({ title, children }) => {
   return (
@@ -17,7 +18,7 @@ const Layout = ({ title, children }) => {
           Filtro Avançado <Dropdown />
         </button>
       </div>
-      <div></div>
+      <List/>
       {children}
     </section>
   );
